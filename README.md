@@ -1,32 +1,39 @@
-EasyRTC Server Example
-======================
+# node-js-getting-started
 
-This folder contains all the files you'll need to create a simple server with EasyRTC, Express, and Socket.io. You can copy these files where you wish.
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-Files and Folders:
-------------------
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
- - package.json - Provides project information allowing npm to find and install required modules.
- - server.js - Server code.
- - /static/ - Root folder for web server. Put html files here!
+## Running Locally
 
- 
-Installing Required Modules:
-----------------------------
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
- - Type `npm install` in console.
- - This will read the package.json file to find and install the required modules including EasyRTC, Express, and Socket.io.
- - Required modules will go into a new 'node_modules' subfolder
+```sh
+$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
 
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-Running the Server:
--------------------
+## Deploying to Heroku
 
- - Type `node server` in console.
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+or
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Viewing the examples:
----------------------
+## Documentation
 
- - In your WebRTC enabled browser, visit your server address including the port. By default port 8080 is used.
- - http://localhost:8080/
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
